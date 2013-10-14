@@ -23,9 +23,14 @@ exports.add = function(req,res) {
     });
 
     todo.save(function(err) {
-      if(err) throw err;
-      console.log("Todo Saved.")
-      res.send(todo);
+      if(err) {
+        throw err;
+        res.send(err);
+      }
+      else {
+        console.log("Todo Saved.")
+        res.send(todo);
+      }
     });
   }
 };
@@ -53,6 +58,7 @@ exports.done = function (req, res) {
         console.log("TODO Updated.");
       } else {
         console.log(err);
+        res.send(err);
       }
     });
   });
@@ -71,6 +77,7 @@ exports.destroy = function (req, res) {
           return res.send('');
         } else {
           console.log(err);
+          res.send(err);
         }
       });
     } else {
