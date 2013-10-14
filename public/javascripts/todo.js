@@ -47,7 +47,7 @@ jQuery(function($) {
         title: todo_title,
         done: false
       }
-      $(this).val = "";
+      $(this).val("");
       App.store(todo);
     },
 
