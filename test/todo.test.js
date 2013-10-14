@@ -11,7 +11,7 @@ describe('#Routes:', function() {
         .expect(200)
         .end(function(err,res) {
           if(err) throw err;
-          console.log("PASS: Redirection to INDEX Successfully");
+          console.log('PASS: Redirection to INDEX Successfully');
           done();
         });
   });
@@ -24,7 +24,7 @@ describe('#Routes:', function() {
         .expect(404)
         .end(function(err,res) {
           if(err) throw err;
-          console.log("PASS: Redirection to INDEX Failed, PATH Not Found");
+          console.log('PASS: Redirection to INDEX Failed, PATH Not Found');
           done();
         });
   });
@@ -39,7 +39,7 @@ describe('#Todo Creation:', function() {
         .expect(200)
         .end(function(err,res) {
           if(err) throw err;
-          console.log("PASS: Object Successfully Added");
+          console.log('PASS: Object Successfully Added');
           done();
         });
   });
@@ -54,7 +54,7 @@ describe('#Todo Deletion:', function() {
 
     todo.save(function(err) {
       if( err ) throw err;
-      console.log("Todo Saved.")
+      console.log('Todo Saved.')
     });
 
     request(app)
@@ -64,7 +64,7 @@ describe('#Todo Deletion:', function() {
         .expect(200)
         .end(function(err, res) {
           if(err) throw  err;
-          console.log("PASS: Self Created Object Destroy by ID Succeed.");
+          console.log('PASS: Self Created Object Destroy by ID Succeed.');
           done();
         });
   });
@@ -79,7 +79,7 @@ describe('#Todo Deletion:', function() {
         .expect(200)
         .end(function(err, res) {
           if(err) throw  err;
-          console.log("PASS: Object Destroy by ID Failed. ID not found.");
+          console.log('PASS: Object Destroy by ID Failed. ID not found.');
           done();
         });
   });
@@ -94,7 +94,7 @@ describe('#Todo List:', function() {
         .end(function(err, res) {
           if(err) throw err;
           //console.log(res.body);
-          console.log("PASS: Successfully Receive TODO Objects List");
+          console.log('PASS: Successfully Receive TODO Objects List');
           done();
         });
   });
@@ -109,7 +109,7 @@ describe('#Todo List:', function() {
         .expect(200)
         .end(function(err, res) {
           if(err) throw err;
-          console.log("PASS: Content-Type 'application/json' Received");
+          console.log('PASS: Content-Type \'application/json\' Received');
           done();
         });
   });
@@ -124,9 +124,9 @@ describe('#Todo List:', function() {
         .end(function(err, res){
           if(err) throw err;
           if(res.body.length >= 0) {
-            console.log("PASS: Response List Length: " + res.body.length);
+            console.log('PASS: Response List Length: ' + res.body.length);
           }
-          else throw "List Count is not Greater Than ZERO! " + err;
+          else throw 'List Count is not Greater Than ZERO! ' + err;
           done();
         });
   });

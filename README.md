@@ -1,4 +1,14 @@
-# TODO Application with NodeJS and Mongoose
-Sample "TODO" application
+# TODO Application with NodeJS, Mongoose and SuperTest framework
+"TODO" application
 
-You need to start mongo database before running the application(app.js)
+Steps to run your application in Production mode:
+
+1- Start Mongodb from your terminal: mongod
+2- Run 'app.js': node app.js
+3- Open your browser and hit this url: http://localhost:3000/
+
+Steps to run Test Cases in Test mode:
+
+1- Start Mongodb from your terminal: mongod
+2- Run 'app.js' with Test Configurations: NODE_ENV=test node app.js
+3- Run your test file('/test/todo.test.js') with Mocha:  mocha test/todo.test.js

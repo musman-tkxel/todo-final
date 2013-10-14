@@ -41,5 +41,5 @@ app.post('/todos/destroy', routes.destroy);
 // Server listening
 
 app.listen(3000, function() {
-  console.log("Server Listening Port: %d", app.address().port);
+  console.log('Server Listening Port: %d', app.address().port);
 });

@@ -12,6 +12,7 @@
     <file path="/index.js" changelist="51929b0a-a0c3-4436-b238-167b4ff48422" time="1381752694216" ignored="false" />
     <file path="/a.js" changelist="51929b0a-a0c3-4436-b238-167b4ff48422" time="1381754327390" ignored="false" />
     <file path="/a.jade" changelist="51929b0a-a0c3-4436-b238-167b4ff48422" time="1381754337512" ignored="false" />
+    <file path="/README.md" changelist="51929b0a-a0c3-4436-b238-167b4ff48422" time="1381755371081" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -49,30 +50,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/json2.js">
+      <file leaf-file-name="todo.test.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/todo.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todo.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/todo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="76" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
+            <state line="116" column="61" selection-start="3153" selection-end="3153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.test.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/todo.test.js">
+      <file leaf-file-name="todo.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="7" selection-start="137" selection-end="137" vertical-scroll-proportion="0.10968921">
+            <state line="49" column="19" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.904936">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,13 +134,14 @@
       <list>
         <option value="$PROJECT_DIR$/routes/list.js" />
         <option value="$PROJECT_DIR$/routes/route.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/todo.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/test/todo.test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/todo.js" />
       </list>
     </option>
   </component>
@@ -520,13 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/todo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
@@ -585,23 +578,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/todo.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="76" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/todo.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="137" selection-end="137" vertical-scroll-proportion="0.10968921">
+        <state line="116" column="61" selection-start="3153" selection-end="3153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="19" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.904936">
           <folding />
         </state>
       </provider>
