@@ -23,6 +23,7 @@ app.configure('development', function() {
 app.configure('production', function() {
   app.use(express.errorHandler());
   mongoose.connect('mongodb://localhost/node_todos');
+
 });
 
 app.configure('test', function() {

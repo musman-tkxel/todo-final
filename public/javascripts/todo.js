@@ -15,8 +15,11 @@ jQuery(function($) {
     store: function(data) {
       if(data) {
         $.post('/todos/add', data, function(data, textStatus, jqXHR) {
-          App.appendTodo(data);
-          this.$newTodo.val('');
+          if(data.invalid && data.invalid.length > 0) alert(data.invalid);
+          else {
+            App.appendTodo(data);
+            this.$newTodo.val('');
+          }
         });
       }
     },

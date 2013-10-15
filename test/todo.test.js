@@ -4,6 +4,11 @@ process.env.NODE_ENV = 'test';
 var app = require('../app');
 var ToDo = require('../models/todo');
 
+beforeEach(function(done){
+  ToDo.collection.remove();
+  done();
+});
+
 describe('#Routes:', function() {
   it('it should route to INDEX successfully', function(done) {
     request(app)
@@ -35,11 +40,12 @@ describe('#Todo Creation:', function() {
     request(app)
         .post('/todos/add')
         .set('Accept', 'application/json')
-        .send({title: 'welcome'})
+        .send({title: 'Welcome'})
         .expect(200)
         .end(function(err,res) {
           if(err) throw err;
-          console.log('PASS: Object Successfully Added');
+          else if(res.body.invalid && res.body.length > 0) console.log(res.body.invalid);
+          else console.log('PASS: Object Successfully Added');
           done();
         });
   });

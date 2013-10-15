@@ -24,14 +24,16 @@ exports.add = function(req,res) {
 
     todo.save(function(err) {
       if(err) {
-        throw err;
-        res.send(err);
+        res.send({invalid: 'ERROR: Couldn\'t Save ToDo' });
       }
       else {
-        console.log("Todo Saved.")
+        console.log("Todo Saved.");
         res.send(todo);
       }
     });
+  }
+  else {
+    res.send({invalid: 'ERROR: Title is Empty'});
   }
 };
 
